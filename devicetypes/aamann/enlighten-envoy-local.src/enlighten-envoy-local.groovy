@@ -15,7 +15,7 @@
  */
 
 def version() {
-	return "1.4.4 (20170822)\n© 2016–2017 Andreas Amann"
+	return "1.4.4 (20170822)\n© 2016–2017 Andreas Amann"
 }
 
 preferences {
@@ -616,13 +616,15 @@ def getGraphHTML() {
 										title: 'Power (W)',
 										format: 'decimal',
 										textStyle: {color: '#004CFF'},
-										titleTextStyle: {color: '#004CFF'}
+										titleTextStyle: {color: '#004CFF'},
+										viewWindow: {min: 0}
 									},
 									1: {
 										title: 'Energy (kWh)',
 										format: 'decimal',
 										textStyle: {color: '#FF0000'},
-										titleTextStyle: {color: '#FF0000'}
+										titleTextStyle: {color: '#FF0000'},
+										viewWindow: {min: 0}
 									}
 								},
 								legend: {
