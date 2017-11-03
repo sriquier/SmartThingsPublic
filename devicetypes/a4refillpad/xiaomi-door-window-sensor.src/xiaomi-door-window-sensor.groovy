@@ -116,7 +116,7 @@ private Map getBatteryResult(rawValue) {
 	def volts = rawValue / 1
     def maxVolts = 100
 
-	if (volts > maxVolts) {
+	if (volts > maxVolts || volts==0) {
 				volts = maxVolts
     }
    
